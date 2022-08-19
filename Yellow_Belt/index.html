@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shelter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="topNav">
+            <div class="title">
+                <img id="heart" src="./assets/heart-light.png" alt="heart image">
+                <span>Pet Shelter</span>
+            </div>
+            <ul class="buttons">
+                <li>Find A Pet</li>
+                <li>About</li>
+                <li><button id=donate onclick="this.remove()">Donate</button></li>
+            </ul>
+        </div>
+        <div class="bottomNav">
+            <div class="select">
+                <span>I'm looking for a...</span>
+                <div class="selectMenu">
+                    <img id="paw" src="./assets/paw-light.png" alt="paw image">
+                    <select name="petSelect" id="petSelect" onchange="alert('You are looking for a ' + this.value)">
+                        <option value="Any Pet">Any pet</option>
+                        <option value="Cat">Cat</option>
+                        <option value="Dog">Dog</option>
+                    </select>
+                </div>
+            </div>
+            <div class="location">
+                <span>in or near...</span>
+                <div class="cityInput">
+                    <img id="pin" src="./assets/pin-light.png" alt="pin image">
+                    <input type="text" name="cityZip" id="cityOrZip" placeholder="City or Zip Code">
+                </div>
+            </div>
+            <button id="find">Find my new best friend</button>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="pet">
+            <div class="petImgDesc">
+                <img class="petImg" src="./assets/pepper.jpg" alt="Image of Pepper">
+                <div class="petDesc">
+                    <h3>Pepper</h3>
+                    <p>Pepper is a slightly shy grey tabby, but she really loves showing her human affection.</p>
+                </div>
+            </div>
+                <div class="petCount">
+                    <span class="counter">3 petting(s)</span>
+                    <button class="petBtn" onclick="addPet(0)">Pet Pepper</button>
+                </div>
+            
+        </div>
+        <div class="pet">
+            <div class="petImgDesc">
+                <img class="petImg" src="./assets/bruce.jpg" alt="Image of Bruce">
+                <div class="petDesc">
+                    <h3>Bruce</h3>
+                    <p>Bruce is a loyal companion. He loves long walks and cold weather.</p>
+                </div>
+            </div>
+                <div class="petCount">
+                    <span class="counter">5 petting(s)</span>
+                    <button class="petBtn" onclick="addPet(1)">Pet Bruce</button>
+                </div>
+        </div>
+        <div class="pet">
+            <div class="petImgDesc">
+                <img class="petImg" src="./assets/oscar.jpg" alt="Image of Oscar">
+                <div class="petDesc">
+                    <h3>Oscar</h3>
+                    <p>Oscar is bright, energetic and friendly. He is looking for a good home.</p>
+                </div>
+            </div>
+            <div class="petCount">
+                <span class="counter">8 petting(s)</span>
+                <button class="petBtn" onclick="addPet(2)">Pet Oscar</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

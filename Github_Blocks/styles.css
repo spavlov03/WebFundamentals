@@ -1,0 +1,48 @@
+img.octocat {
+    height: 200px;
+}
+.title { 
+    text-align: center;
+    font-style: italic;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+}
+.container {
+    background-color: rgb(238, 235, 52);
+    display: inline-block;
+    justify-content:space-evenly;
+    padding: 15px;
+    width: 800px;
+}
+.top {
+    background-color: rgb(124, 16, 213);
+    padding: 15px;
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: space-around;
+}
+.middle { 
+    background-color: rgb(225, 69, 100);
+    padding: 15px;
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: space-evenly;
+}
+.bottom { 
+    background-color: #2d7500;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+.link { 
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    text-decoration:  none;
+}
+a:link { text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+a:active {text-decoration: none;}
+

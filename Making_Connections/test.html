@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>
+			JavaScript | Get the text of a span element
+		</title>
+	</head>
+	
+	<body style = "text-align:center;" id = "body">
+		
+		<h1 style = "color:green;" >
+			GeeksForGeeks
+		</h1>
+		
+		<span id="GFG_Span" style = "font-size: 15px; font-weight: bold;">
+			This is text of Span element.
+		</span>
+		
+		<br><br>
+		
+		<button onclick = "gfg_Run()">
+			Click here
+		</button>
+		
+		<p id = "GFG_DOWN" style =
+			"color:green; font-size: 20px; font-weight: bold;">
+		</p>
+		
+		<script>
+            var count = 0;
+			var span = document.getElementById("GFG_Span");
+			var el_down = document.getElementById("GFG_DOWN");
+			
+			function gfg_Run() {
+				span.innerHTML = count++;
+			}		
+		</script>
+	</body>
+</html>					
+
