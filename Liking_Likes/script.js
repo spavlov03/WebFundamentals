@@ -8,4 +8,3 @@ function addLike(bnum) {
     count[bnum]++;
     h3[bnum].innerText = count[bnum] + " like(s)";
 }
- 
